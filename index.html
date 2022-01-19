@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>haganzi's portfolio</title>
-        <meta name="description" content="portfolio for world-renowned designer haganzi" />
-        <meta name="author" content="haganzi" />
+        <title>hayejin's portfolio</title>
+        <meta name="description" content="portfolio for world-renowned designer hayejin" />
+        <meta name="author" content="hayejin" />
         <link rel="icon" type="image/png" href="imgs/favicon.png" />
         <script src="https://kit.fontawesome.com/89563d414b.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +29,10 @@
                 <li class="navbar__menu__item">My work</li>
                 <li class="navbar__menu__item">Contact</li>
             </ul>
+            <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
         </div>
     </nav>
 
@@ -36,152 +40,220 @@
     <section id="home">
         <img src="imgs/profile.JPG" alt="haganzi's profile photo" class="home__avatar"/>
         <h1 class="home__title">Hello, <br />I'm Ha Ye Jin.</h1>
-        <h2 class="home__description">디자인할 수 있는 개발자 웅앵 나를 소개하는..</h2>
+        <h2 class="home__description">물같은 디자이너가 되고 싶은 하예진입니다.</h2>
         <button class="home__contact">Contact Me</button>
     </section>
 
     <!--About-->
-    <section id="about">
+    <section id="about" class="section section__container">
         <h1>About me</h1>
-        <p>내가 하고싶은 말 생각해서 적기 어떤 프로젝트해왔는지</p>
-
+        <p>저는 새로운 툴, 새로운 기법을 공부해나가는 것을 좋아합니다. <br />
+            다양한 분야를 넘나들며 경계 없이 디자인을 하고 싶습니다. <br />
+            제가 배운 전공공부와 디자인을 결합하여 결과물을 만들때 제일 큰 성취감을 느끼며
+            <br />이 성취감이 저의 디자인하는 이유입니다. 
+            <br />팀 환경에서 일할때도, 혼자서 일할 때에도 유연하게 계획을 세워 작업할 수 있습니다.<br />
+             </p>
+        
         <div class="about__majors">
             <div class="major">
-            <div class="major__icon"></div>
-            <i class="fas fa-video"></i>
-            <div class="major__title">영상제작</div>
-            <div class="major__description"></div>
-            Premiere Pro
+            <div class="major__icon">
+            <i class="far fa-window-restore"></i>
+            </div>
+            <h2 class="major__title">Front-end</h2>
+            <div class="major__description">
+            Visual Studio Cod <br /> HTML, CSS
+            </div>
             </div>
             
+            
             <div class="major">
-            <div class="major__icon"></div>
-            <i class="fas fa-video"></i>
-            <div class="major__title">디자인</div>
-            <div class="major__description"></div>
+            <div class="major__icon">
+            <i class="fas fa-images"></i>
+            </div>
+            <h2 class="major__title">Design</h2>
+            <p class="major__description">
             Photoshop, Illustration, XD
+            </p>
             </div>
             
+            
             <div class="major">
-            <div class="major__icon"></div>
+            <div class="major__icon">
             <i class="fas fa-video"></i>
-            <div class="major__title">그 외</div>
-            <div class="major__description"></div>
-            HTML, CSS, SPSS, R studio, Tableau
             </div>
+            <h2 class="major__title">Video</h2>
+            <p class="major__description">
+            Primiere
+            </p>
+            </div>
+        </div>
+            
         
         <div class="about__jobs"></div>
         <div class="job"></div>
-            <p class="job__name">자격증</p>
-            <p class="job__description">컴퓨터활용능력 1급, GTQ 1급, 컴퓨터그래픽스운용기능사</p>
+            <p class="job__name">그 외</p>
+            <p class="job__description"> 통계프로그램 : SPSS, R Studio, Tableau <br /> Office : Powerpoint, Word, Excel</p>
         </div>
+        <br />
+        <div class="job"></div>
+            <p class="job__name">자격증</p>
+            <p class="job__description"> GTQ 1급, 컴퓨터활용능력 1급
+        </div>
+        
     </section>
     
-    <!--Skills-->
-    <section id="skills">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>설명하는 문장 적기 ~~ 프로그램 경험이 있고 새로운 것 배운데 관심이 있고..
-            팀 환경에서 일하거나 혼자서도 일할 수 있다. 계획을 세우고 시간을 잘 지키고
-            스트레스가 있어도 충분히 잘 적응해서 할 수 있다. 
-        </p>
-        <div class="skillset">
-            <div class="skillset__left"></div>
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-                <div class="skill_description">
-                    <span>HTML</span>
-                    <span>20%</span>
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+          <h1>Skills</h1>
+          <h2>Skills & Attributes</h2>
+          <p>
+            디자인 툴을 다루는 데에 관심이 많고 새로운 프로그램을 배우는 것을 좋아합니다
+          </p>
+          <div class="skillset"></div>
+            
+              <h3 class="skillset__title"></h3>
+              <div class="skill">
+                <div class="skill__description">
+                  <span>HTML</span>
+                  <span>20%</span>
                 </div>
                 <div class="skill__bar">
-                    <div class="skill__value"></div>   
+                  <div class="skill__value" style="width: 20%;"></div>
                 </div>
-                <div class="skill_description">
-                    <span>CSS</span>
-                    <span>20%</span>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__value"></div>
-                    
-                </div>
-                <div class="skill_description">
-                    <span>Primiere Pro</span>
-                    <span>70%</span>
+              </div>
+              <div class="skill">
+                <div class="skill__description">
+                  <span>CSS</span>
+                  <span>20%</span>
                 </div>
                 <div class="skill__bar">
-                    <div class="skill__value"></div>
-                    
+                  <div class="skill__value" style="width: 20%;"></div>
                 </div>
-                <div class="skill_description">
-                    <span>Photoshop</span>
-                    <span>90%</span>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__value"></div>
-                    
-                </div>
-                <div class="skill_description">
-                    <span>Illustration</span>
-                    <span>80%</span>
+              </div>
+            
+              <div class="skill">
+                <div class="skill__description">
+                  <span>Primiere</span>
+                  <span>70%</span>
                 </div>
                 <div class="skill__bar">
-                    <div class="skill__value"></div>
-                    
+                  <div class="skill__value" style="width: 70%;"></div>
                 </div>
-                <div class="skill_description">
-                    <span>XD</span>
-                    <span>60%</span>
-                </div>
-                <div class="skill__bar">
-                    <div class="skill__value"></div>
-                    
-                </div>
-                <div class="skill_description">
-                    <span>SPSS, R studio, Tableau</span>
-                    <span>30%</span>
+              </div>
+              <div class="skill">
+                <div class="skill__description">
+                  <span>Photoshop</span>
+                  <span>90%</span>
                 </div>
                 <div class="skill__bar">
-                    <div class="skill__value"></div>
-                    
+                  <div class="skill__value" style="width: 90%;"></div>
                 </div>
+              </div>
+              <div class="skill">
+                <div class="skill__description">
+                  <span>Illustrator</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__description">
+                  <span>XD</span>
+                  <span>60%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 60%;"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__description">
+                  <span>SPSS, R Studio, Tableau</span>
+                  <span>30%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 30%;"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__description">
+                  <span>Powerpoint, Word, Excel</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" style="width: 95%;"></div>
+                </div>
+              </div>
+              
             </div>
-            <div class="skillset__right">
-                <div class="tools"></div>
-                <h3 class="skillset__title">Tools</h3>
-                <ul class="tools__list">
-                    <li><span>Visual Studio Code</span></li>
-                    <li><span></span></li>
-                    <li><span></span></li>
-                    <li><span></span></li>
-                    <li><span></span></li>
-                    <li><span></span></li>
-                </ul>
-                <div class="etc"></div>
-                <h3 class="skillset__title">Etc</h3>
-                <ul class="etc__list">
-                    <li><span>SPSS</span></li>
-                    <li><span></span></li>
-                    <li><span></span></li>
-                </ul>
+            
             </div>
         </div>
-    </section>
+      </section>
     
     <!--Work-->
-    <section id="work">
+    <section id="work"class="section">
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-        <button class="category__btn">All<span class="category__count">6</span></button>
-        <button class="category__btn">Webpage<span class="category__count">1</span></button>
+        <button class="category__btn selected" data-filter="*"> All<span class="category__count">5</span></button>
+        <button class="category__btn">Front-end<span class="category__count">1</span></button>
         <button class="category__btn">Design<span class="category__count">3</span></button>
-        <button class="category__btn">Video<span class="category__count">2</span></button>
+        <button class="category__btn">Video<span class="category__count">1</span></button>
     </div>
 
+    <div class="work__projects">
+        <a href="" class="project" target="blank" data-type="Front-end">
+            <img class="project__img" src="imgs/projects/frontend.jpg" alt="Front-end">
+            <div class="project__description">
+                <h3>My Portfolio Site</h3>
+                <span>Clone coding with HTML and CSS</span>
+            </div>
+        </a>
+    
+    
+        <a href="" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/ui, ux.jpg" alt="UI/UX Design">
+            <div class="project__description">
+                <h3>UI/UX Design</h3>
+                <span>Design with XD and Illustrator, Photoshop</span>
+            </div>
+        </a>
+   
+    
+        <a href="" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/poster1.jpg" alt="Poster Design">
+            <div class="project__description">
+                <h3>Poster Design</h3>
+                <span>Design with Illustrator and Photoshop</span>
+            </div>
+        </a>
+    
+    
+        <a href="" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/poster2.jpg" alt="Poster Design">
+            <div class="project__description">
+                <h3>Poster Design</h3>
+                <span>Design with Illustrator and PhotoshopS</span>
+            </div>
+        </a>
+    
+    
+        <a href="https://www.youtube.com/watch?v=OgBQwbcw9aA" class="project" target="blank">
+            <img class="project__img" src="imgs/projects/video.jpg" alt="Video">
+            <div class="project__description">
+                <h3>Company Promotion video</h3>
+                <span>Edit with Premiere Pro</span>
+            </div>
+        </a>
+    </div>
+</div>
 </section>
 
     <!--Contact-->
-    <section id="contact">
+    <section id="contact"class="section">
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact_email">yjha0512@naver.com</h2>
         <p class="contact__rights">
